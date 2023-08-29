@@ -1,0 +1,33 @@
+{
+  "@context": [
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "KYCCredential": {
+        "@id": "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld#KYCAgeCredential",
+        "@context": {
+          "@version": 1.1,
+          "@protected": true,
+          "id": "@id",
+          "type": "@type",
+          "kyc-vocab": "https://github.com/iden3/claim-schema-vocab/blob/main/credentials/kyc.md#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "selfie": {
+            "@id": "kyc-vocab:selfie",
+            "@type": "xsd:boolean"
+          },
+          "aadhar": {
+            "@id": "kyc-vocab:aadhar",
+            "@type": "xsd:boolean"
+          },
+          "pan": {
+            "@id": "kyc-vocab:pan",
+            "@type": "xsd:boolean"
+          }
+        }
+      }
+    }
+  ]
+}
